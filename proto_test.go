@@ -40,7 +40,7 @@ func BenchmarkGolangProto(b *testing.B) {
 		}
 	})
 
-	b.Log(maxLatency)
+	b.Log("max latency", maxLatency)
 }
 
 func BenchmarkGoGoProto(b *testing.B) {
@@ -75,5 +75,5 @@ func BenchmarkGoGoProto(b *testing.B) {
 		}
 	})
 
-	b.Log(maxLatency)
+	b.Log("max latency", maxLatency)
 }
