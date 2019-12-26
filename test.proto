@@ -1,0 +1,12 @@
+syntax = "proto3";
+package test;
+
+message B {
+    uint64 x = 1;
+    uint64 y = 2;
+    uint64 z = 3;
+}
+
+message A {
+    repeated B bs = 1;
+}

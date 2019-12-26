@@ -1,0 +1,18 @@
+syntax = "proto3";
+package test;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+message BB {
+    // option (gogoproto.goproto_unrecognized) = false;
+    // option (gogoproto.goproto_unkeyed) = false;
+    // option (gogoproto.goproto_sizecache) = false;
+
+    uint64 x = 1;
+    uint64 y = 2;
+    uint64 z = 3;
+}
+
+message AA {
+    repeated BB bs = 1;
+}
